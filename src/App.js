@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import './App.css';
 import { AnimatePresence, motion } from 'framer-motion'
 import TypewriterComponent from 'typewriter-effect'
+import './particles.json'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     },
     []
   );
+  
    const projects=[
      {
        name:"Medical Export",
@@ -52,16 +54,33 @@ function App() {
      },
 
    ]
+
+   
   return loading ?(
     <motion.div initial={{ scale: 0 }} exit={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 100, duration: 0.6, delay: 0.1, scale: 2 }}> 
     <motion.div className="w-full bg-cover "
     initial={{ y: -600 }} animate={{ y: 0 }} transition={{ delay: 0 }}
    >
-    <div className="w-full h-screen bg-black" initial={{ scale: 0 }} exit={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 100, duration: 0.6, delay: 0.1, scale: 2 }}>
-      <h1 className="text-8xl m-auto text-[#0099ff] font-bold  pt-[20%] text-center">
-        Deepak Chattwani
-      </h1>
+   <div class="context">
+        <h1 className="lg:text-8xl sm:text-6xl text-center m-auto text-white font-bold">Deepak Chattwani</h1>
     </div>
+  
+
+      <div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div >
+    
     <div className="w-full h-screen bg-white my-10">
        <div className="lg:w-[60%] m-auto text-center bg-white sm:w-full px-5">
         <h1 className="text-4xl font-bold ">About Me</h1>
@@ -114,6 +133,7 @@ function App() {
            </div>
          </div>
        </div>
+       
        <div className="lg:w-[80%] m-auto text-center bg-white sm:w-full px-5 mt-10">
        <h1 className="text-4xl font-bold ">Recent Projects</h1>
          <div className="my-8 grid grid-flow-row lg:grid-cols-3 sm:grid-cols-1  ">
