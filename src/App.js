@@ -61,8 +61,12 @@ function App() {
     <motion.div className="w-full bg-cover "
     initial={{ y: -600 }} animate={{ y: 0 }} transition={{ delay: 0 }}
    >
-   <div class="context">
+   <div className="context bg-black">
         <h1 className="lg:text-8xl sm:text-6xl text-center m-auto text-white font-bold">Deepak Chattwani</h1>
+         <div className="mx-auto lg:w-[10%] sm:w-[30%] mt-20 flex ">
+          <a  className="cursor-pointer mx-3" href="github.com/deep-69bits"><img className="justify-center cursor-pointer  rounded-full w-[40px]" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></a>
+          <a  className="cursor-pointer mx-3" href="https://www.linkedin.com/in/deepak-chattwani-340bb8227/"><img className="justify-center cursor-pointer  rounded-full w-[40px]" src="https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/linkedin-icon-18-256.png" alt="" /></a>
+         </div>
     </div>
   
 
