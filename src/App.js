@@ -88,11 +88,7 @@ function App() {
     
     <div className="w-full h-screen bg-white my-10">
    
-       <div className="lg:w-[60%] m-auto text-center bg-white sm:w-full px-5">
-        <h1 className="text-4xl font-bold ">About Me</h1>
-        <img className="rounded-full w-[200px] m-auto my-10" src="https://ik.imagekit.io/cmef8hxb6/iamges/deep_kUuozQ8Z5R?ik-sdk-version=javascript-1.4.3&updatedAt=1668596521659" alt="" />
-        <p className="text-[1rem] font-normal my-8">As a web developer and student, I have a unique set of skills and experiences that set me apart in the technology industry. I have a passion for both coding and learning, which allows me to constantly improve my skills and stay up-to-date with the latest developments in web development. I enjoy problem-solving and finding creative solutions to technical challenges, and I take pride in delivering high-quality, user-friendly websites and web applications.Being a student has also helped me to develop strong critical thinking and communication skills, which are valuable assets in the field of web development. I am always eager to learn and explore new technologies, and I believe that my combination of technical expertise and academic background gives me a well-rounded perspective that will serve me well in my future career.</p>
-       </div>
+       
 
        <div className="lg:w-[75%] my-16 m-auto  text-center bg-white sm:w-full px-5 grid grid-flow-row lg:grid-cols-5 sm:grid-cols-1 "> 
          <div className="mx-4 my-10">
